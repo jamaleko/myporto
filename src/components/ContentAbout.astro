@@ -13,7 +13,7 @@ interface TechStack {
    frontend: string[];
 };
 
-type ContactType = 'github' | 'twitter' | 'linkedIn' | 'xing' | 'email';
+type ContactType = 'github';
 
 const techStack: TechStack = {
     devOps: [
@@ -50,7 +50,7 @@ const techStack: TechStack = {
 
 // Developer profile
 const me: Developer = {
-    name: 'Dejan Vi.',
+    name: 'Jamal Eko',
     skills: [
         ...techStack.devOps,
         ...techStack.backend,
@@ -70,15 +70,9 @@ const me: Developer = {
 const contact = (type: ContactType): string => {
     switch (type) {
         case 'github':
-            return 'https://github.com/devidevio';
-        case 'twitter':
-            return 'https://x.com/devidev_io';
-        case 'linkedIn':
-            return 'https://www.linkedin.com/in/dejan-vi';
-        case 'xing':
-            return 'https://www.xing.com/profile/Dejan_Vintonjiv';
-        case 'email':
-            return 'hi@devidev.io';
+            return 'https://github.com/jamaleko';
+        
+        
         default:
             return 'Send fax.';
     }
